@@ -35,7 +35,7 @@ public class Main {
         System.out.println(pozdrav3 + meno);*/
 
         //Kalkulacka - Uloha
-        float prveCislo;
+        /*float prveCislo;
         float druheCislo;
         Scanner mujScanner = new Scanner(System.in);
 
@@ -48,8 +48,17 @@ public class Main {
         System.out.println(prveCislo + druheCislo);
         System.out.println(prveCislo - druheCislo);
         System.out.println(prveCislo * druheCislo);
-        System.out.println(prveCislo / druheCislo);
+        System.out.println(prveCislo / druheCislo);*/
 
+        //ULOHA - UZIVATEL ZADA SLOVO - VO VYPISE BUDU VSETKY PISMENA VELKYM
+        Scanner mujScanner = new Scanner(System.in);
+        System.out.println("Zadaj svoje slovo:");
+        String slovo = mujScanner.nextLine();
+
+        System.out.println(slovo.toUpperCase());
+        System.out.println(slovo.length());
+        System.out.println(slovo.isEmpty());
+        System.out.println(slovo.indexOf('j'));
 
 
 
