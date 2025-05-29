@@ -1,4 +1,5 @@
 import javax.print.DocFlavor;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -110,7 +111,7 @@ public class Main {
         }*/
 
         //KALKULACKA BMI INDEXU hmotnost (kg) / vyska na 2 (m)
-        float vyska;
+        /*float vyska;
         float hmotnost;
         float bmi;
 
@@ -134,9 +135,57 @@ public class Main {
         else {
             System.out.println("Uzivatel zadal zapornu hmotnost:");
         }
-            System.out.println(bmi);
+            System.out.println(bmi);*/
 
 
+        //VETVENIE: KOCKA: PARNE CISLO = VYHRAVA / NEPARNE = PREHRAVA
+
+        /*int hodeneCislo;
+        Random nahodnyGenerator = new Random();
+
+        System.out.println ("Pre hodenie kocky stac enter");
+        Scanner mujScanner = new Scanner(System.in);
+        mujScanner.nextLine();
+
+
+        hodeneCislo = nahodnyGenerator.nextInt(1,7);
+        System.out.println("Hodene Cislo je: " + hodeneCislo);
+
+        if (hodeneCislo % 2 == 1) {
+            System.out.println ("Parne - Vyhravas");
+        } else{
+            System.out.println ("Neparne - Prehravas");
+    }*/
+
+        //Switch - den v tyzdni
+        Scanner mujScanner = new Scanner(System.in);
+        int cisloDne;
+        System.out.println("Zadej cislo dne:");
+        cisloDne = mujScanner.nextInt();
+
+        switch (cisloDne) {
+            case 1:
+                System.out.println("Je pondeli");
+                break;
+            case 2:
+                System.out.println("Je utery");
+                break;
+            case 3:
+                System.out.println("Je streda");
+                break;
+            case 4:
+                System.out.println("Je ctvrtek");
+                break;
+            case 5:
+                System.out.println("Je patek");
+                break;
+            case 6:
+                System.out.println("Je sobota");
+                break;
+            case 7:
+                System.out.println("Je nedele");
+                break;
+        }
 
 
     }
