@@ -158,7 +158,7 @@ public class Main {
     }*/
 
         //Switch - den v tyzdni
-        Scanner mujScanner = new Scanner(System.in);
+       /* Scanner mujScanner = new Scanner(System.in);
         int cisloDne;
         System.out.println("Zadej cislo dne:");
         cisloDne = mujScanner.nextInt();
@@ -185,8 +185,20 @@ public class Main {
             case 7:
                 System.out.println("Je nedele");
                 break;
-        }
+            default:
+                System.out.println("Neplatne cislo dna");
+        }*/
 
+        //POLE
+        int[] znamky = new int [5];
+        znamky [0] = 3;
+        znamky [1] = 5;
+        znamky [2] = 1;
+        znamky [3] = 3;
+        znamky [4] = 1;
+
+        int[] znamky2 = new int[] {3,5,1,3,1};
+        System.out.println(znamky[3]);
 
     }
 }
