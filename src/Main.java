@@ -94,10 +94,19 @@ public class Main {
         System.out.println("Zadaj svoj vek:");
         vek =mujScanner.nextInt();
 
-        if(vek >= 18) {
+        //LOGICKY RETAZEC
+        if(vek >= 18 && vek <65) {
             System.out.println("Uzivatel je dospely");
         }
-
+        else if (vek >= 65) {
+            System.out.println("Uzivatel senior");
+        }
+        else if (vek >=0 && vek < 18) {
+            System.out.println("Uzivatel je nezletily");
+        }
+        else {
+            System.out.println("neda sa zadat zaporny vek");
+        }
 
 
     }
