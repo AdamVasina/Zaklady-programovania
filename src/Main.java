@@ -95,12 +95,13 @@ public class Main {
         vek =mujScanner.nextInt();
 
         //LOGICKY RETAZEC
-        if(vek >= 18 && vek <65) {
+        if(vek >= 18) {
             System.out.println("Uzivatel je dospely");
+             if (vek >= 65) {
+                System.out.println("Uzivatel senior");
+            }
         }
-        else if (vek >= 65) {
-            System.out.println("Uzivatel senior");
-        }
+
         else if (vek >=0 && vek < 18) {
             System.out.println("Uzivatel je nezletily");
         }
