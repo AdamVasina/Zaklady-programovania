@@ -89,7 +89,7 @@ public class Main {
 
         //APLIKACIA NA KONTROLU VEKU (FEATURE) - ak bude uzivate starsi 18 a viac vypis do kozole - Vitaj
 
-        int vek;
+        /*int vek;
         Scanner mujScanner = new Scanner(System.in);
         System.out.println("Zadaj svoj vek:");
         vek =mujScanner.nextInt();
@@ -107,7 +107,36 @@ public class Main {
         }
         else {
             System.out.println("neda sa zadat zaporny vek");
+        }*/
+
+        //KALKULACKA BMI INDEXU hmotnost (kg) / vyska na 2 (m)
+        float vyska;
+        float hmotnost;
+        float bmi;
+
+        Scanner mujScanner = new Scanner(System.in);
+        System.out.println("Zadaj svoju vysku(m):");
+        vyska = mujScanner.nextFloat();
+
+        System.out.println("Zadaj svoju hmotnost(kg):");
+        hmotnost = mujScanner.nextFloat();
+
+        bmi = hmotnost / (vyska * vyska);
+
+
+        if (bmi < 18.5f && bmi>0){
+            System.out.println("Uzivatel ma podvahu:");
+        } else if (bmi >=18.5f && bmi<25) {
+            System.out.println("Uzivatel ma optimalnu vahu:");
+        } else if (bmi>=25) {
+            System.out.println("Uzivatel ma nadvahu:");
         }
+        else {
+            System.out.println("Uzivatel zadal zapornu hmotnost:");
+        }
+            System.out.println(bmi);
+
+
 
 
     }
