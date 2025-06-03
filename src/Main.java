@@ -206,9 +206,46 @@ public class Main {
 
         // LOOPS - SMYCKY
 
-        /*for(int i = 0; i < 100; i++) {
-            System.out.println(i + " Hello World");
+        /*for(int i = 0; i < 10; i++) {
+            System.out.println(i * 5);
+            if(i == 5) {
+                //break
+                continue;
+            }
+            System.out.println(i);
         }*/
+
+// VYPISY Z POLI - SMYSCKA for
+        /*String[] jmena = new String[] {"Jan", "Petr", "Katka", "Jana"};
+
+        //for
+        /*for(int i = 0; i < jmena.length; i++){
+            System.out.println(jmena[i]);
+        }
+
+        //foreach
+        for(String jmeno: jmena){
+            System.out.println(jmeno);
+        }*/
+
+        //while
+        /*int riadiacaPremenna = 0;
+        while (riadiacaPremenna <= 5){
+            System.out.println(riadiacaPremenna);
+            riadiacaPremenna++;
+            System.out.println("Tu pokracuj");
+        }*/
+
+        //do ... While
+        /*int riadiacaPremenna2 = 0;
+        do {
+            System.out.println(riadiacaPremenna2);
+            riadiacaPremenna2++;
+        }
+        while(riadiacaPremenna2 ==5);
+        System.out.println("tu pokracuj");*/
+
+
 
 
     }
